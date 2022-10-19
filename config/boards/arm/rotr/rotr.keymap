@@ -6,6 +6,9 @@
 &inc_dec_kp {
 	triggers-per-rotation = <10>;
 };
+&scroll_kp {
+	triggers-per-rotation = <100>;
+};
 &def_lshft {
 	triggers-per-rotation = <4>;
 };
@@ -27,7 +30,7 @@
 		two {
 			//PAGE UP | SPACE | PAGE DOWN
 			bindings = <&kp PG_UP &lt 4 SPACE &kp PG_DN>;
-			sensor-bindings = <&inc_dec_kp LEFT RIGHT>;
+			sensor-bindings = <&scroll_kp RIGHT LEFT>;
 		};
 		three {
 			//MUTE AUDIO | ?? | PLAY/PAUSE
