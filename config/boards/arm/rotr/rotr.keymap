@@ -16,7 +16,7 @@
 
 		default_layer {
 			//PREV | PLAY/PAUSE | NEXT
-			bindings = <&kp LC(LS(M)) &lt 4 F13 &kp LG(W)>;
+			bindings = <&kp LS(LG(A)) &lt 4 LS(LG(V)) &kp LG(W)>;
 			sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
 		};
 		one {
