@@ -32,6 +32,7 @@
 		three {
 			//MUTE AUDIO | ?? | PLAY/PAUSE
 			bindings = <&kp C_MUTE &lt 4 F13 &kp C_PP>;
+			sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
 		};
 		shift {
 			//BLUETOOTH | RGB ON/OFF
