@@ -6,9 +6,6 @@
 &inc_dec_kp {
 	triggers-per-rotation = <10>;
 };
-&def_bt_profiles {
-	triggers-per-rotation = <3>;
-};
 &def_lshft {
 	triggers-per-rotation = <4>;
 };
@@ -19,23 +16,23 @@
 
 		default_layer {
 			//ZOOM MUTE | ZOOM VIDEO | ZOOM END
-			bindings = <&lt 3 LS(LG(A)) &lt 4 LS(LG(V)) &kp LG(W)>;
+			bindings = <&kp LS(LG(A)) &lt 4 LS(LG(V)) &kp LG(W)>;
 			sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
 		};
 		one {
 			//PREV | PLAY/PAUSE | NEXT
-			bindings = <&lt 3 C_PREV &lt 4 C_PP &kp C_NEXT>;
+			bindings = <&kp C_PREV &lt 4 C_PP &kp C_NEXT>;
 			sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
 		};
 		two {
 			//PAGE UP | SPACE | PAGE DOWN
-			bindings = <&lt 3 PG_UP &lt 4 SPACE &kp PG_DN>;
+			bindings = <&kp PG_UP &lt 4 SPACE &kp PG_DN>;
 			sensor-bindings = <&inc_dec_kp RIGHT LEFT>;
 		};
 		three {
-			//BLUETOOTH
-			bindings = <&trans &bt BT_CLR>;
-			sensor-bindings = <&def_bt_profiles &bt BT_NXT &bt BT_PRV>;
+			//MUTE AUDIO | ?? | PLAY/PAUSE
+			bindings = <&kp C_MUTE &lt 4 F13 &kp C_PP>;
+			sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
 		};
 		shift {
 			//BLUETOOTH | RGB ON/OFF
